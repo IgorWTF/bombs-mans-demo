@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9174479320355043567}
   - component: {fileID: 8122783681234873562}
-  - component: {fileID: 1692943956861023465}
+  - component: {fileID: 6167406963111027456}
+  - component: {fileID: 7694603775525042975}
   - component: {fileID: 5824541339714263662}
+  - component: {fileID: 8406761441685904858}
   m_Layer: 7
   m_Name: Man
   m_TagString: Untagged
@@ -84,7 +86,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &1692943956861023465
+--- !u!50 &6167406963111027456
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174479320355043564}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &7694603775525042975
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,4 +135,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6da1d4f55443e45964ad7f4a39700b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _startHealth: 100
+  _maxHealth: 100
+  _spriteRenderer: {fileID: 8122783681234873562}
+  _damagedColor: {r: 0.84313726, g: 0.44313726, b: 0.44313726, a: 1}
+--- !u!114 &8406761441685904858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174479320355043564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1bd509107490414289adbfe9b778ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _man: {fileID: 5824541339714263662}
