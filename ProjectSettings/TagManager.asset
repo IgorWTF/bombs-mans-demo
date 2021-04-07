@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Bg1
+    uniqueID: 4191422687
+    locked: 0
+  - name: Bg2
+    uniqueID: 4201787999
+    locked: 0
+  - name: Mans
+    uniqueID: 2621921317
+    locked: 0
+  - name: Bombs
+    uniqueID: 2494230447
+    locked: 0
